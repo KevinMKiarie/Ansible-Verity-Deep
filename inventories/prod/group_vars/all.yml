@@ -1,0 +1,6 @@
+app_base_dir: /opt/apps
+docker_network: app-network
+
+domain_nestjs: api.yourdomain.com
+domain_dashboard: dashboard.veritygrowthcoaching.com
+domain_landing: veritygrowthcoaching.com
