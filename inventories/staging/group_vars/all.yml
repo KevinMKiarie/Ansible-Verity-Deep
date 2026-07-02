@@ -1,0 +1,10 @@
+app_base_dir: /opt/apps
+docker_network: app-network
+
+domain_nestjs: api-staging.veritygrowthcoaching.com
+domain_dashboard: dashboard-staging.veritygrowthcoaching.com
+domain_landing: staging.veritygrowthcoaching.com
+
+postgres_db: postgres
+postgres_user: postgress
+postgres_password: postgres-staging

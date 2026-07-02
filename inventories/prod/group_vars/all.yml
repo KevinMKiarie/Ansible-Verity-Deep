@@ -4,3 +4,8 @@ docker_network: app-network
 domain_nestjs: api.yourdomain.com
 domain_dashboard: dashboard.veritygrowthcoaching.com
 domain_landing: veritygrowthcoaching.com
+
+
+postgres_db: appdb
+postgres_user: appuser
+postgres_password: "{{ vault_postgres_password }}"
