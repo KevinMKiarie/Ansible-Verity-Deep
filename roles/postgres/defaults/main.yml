@@ -1,0 +1,5 @@
+postgres_version: "16"
+postgres_db: appdb
+postgres_user: appuser
+postgres_port: 5432
+postgres_data_dir: "{{ app_base_dir }}/postgres/data"

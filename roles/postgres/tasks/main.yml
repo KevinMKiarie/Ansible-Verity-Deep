@@ -1,0 +1,19 @@
+- name: Create postgres data directory
+  file:
+    path: "{{ postgres_data_dir }}"
+    state: directory
+    group: ubuntu
+    mode: "0755"
+
+- name: Deploy postgres docker-compose file
+  template:
+    src: docker-compose.yml.j2
+    dest: "{{ app_base_dir }}/postgres/docker-compose.yml"
+    owner: ubuntu
+    group: ubuntu
+    mode: "0644"
+
+- name: Start postgres container
+  community.docker.docker_compose_v2:
+    project_src: "{{ app_base_dir }}/postgres"
+    state: present
